@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+       <i class="fa-brands fa-youtube" class="logo"></i>
+        <div class="search-box">
+            <input type="text" class="search-bar" id="search" placeholder="search">
+            <button class="search-btn" onclick="searchVideos()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <i class="fa-solid fa-grid-4" class="icon"></i>
+            <i class="fa-solid fa-bell" class="icon"></i>
+            <div class="user-dp">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="side-bar">
+        <a href="#" class="links active"><i class="fa-solid fa-house"></i>home</a>
+        <a href="#" class="links"><i class="fa-solid fa-compass"></i>explore</a>
+        <a href="#" class="links"><i class="fa-solid fa-album-collection"></i>subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><i class="fa-solid fa-book-atlas"></i>library</a>
+        <a href="#" class="links"><i class="fa-solid fa-clock-rotate-left"></i>history</a>
+        <a href="#" class="links"><i class="fa-solid fa-video"></i>your video</a>
+        <a href="#" class="links"><i class="fa-solid fa-clock-three"></i>watch later</a>
+        <a href="#" class="links"><i class="fa-solid fa-thumbs-up"></i>like video</a>
+        <a href="#" class="links"><i class="fa-solid fa-caret-down"></i>show more</a>
+    </div>
+
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">trending</button>
+    </div>
+
+    <h1>Youtube</h1>
+
+    <div id="search_results"></div>
+</body>
+
+</html>
+<script src="index.js">
+
+</script>
