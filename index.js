@@ -66,7 +66,7 @@ function movieshowww(ele)
 {
     
     moviearr.push(ele)
-    localStorage.setItem("youtubeDATAA",JSON.stringify(moviearr))
+    localStorage.setItem("youtubeDATA",JSON.stringify(moviearr))
 }
 
 
@@ -106,7 +106,7 @@ const appendVideo = (data) =>{
             div.addEventListener("click", () =>{
 
                 movieshOO(ele)
-                window.location.href = "showvideos.html"
+                window.location.href = "SearchVedeos.html"
             })
 
             let titlee = document.createElement("h4");

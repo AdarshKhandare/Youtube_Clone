@@ -1,0 +1,8 @@
+#showMovie{
+    width:100%;
+    height:800px;
+}
+#video > iframe{
+    width:100%;
+    height:630px;
+}

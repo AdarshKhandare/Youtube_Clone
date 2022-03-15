@@ -1,11 +1,11 @@
-let moviedata = JSON.parse(localStorage.getItem("youtubeDATA")) || []
-console.log(moviedata)
+let moviedataa = JSON.parse(localStorage.getItem("youtubeDATAA")) || []
+console.log(moviedataa)
 
-const showmovies = () => {
+const showmoviess = () => {
 
     document.getElementById("showMovie").innerHTML = null;
 
-            moviedata.forEach((ele) =>{
+            moviedataa.forEach((ele) =>{
 
             let div = document.createElement("div");
             div.setAttribute("id","video")
@@ -16,7 +16,7 @@ const showmovies = () => {
 
  
             let thumb = document.createElement("iframe");
-            thumb.src = `https://www.youtube.com/embed/${ele.id}`;
+            thumb.src = `https://www.youtube.com/embed/${ele.id.videoId}`;
             
 
             div.append(thumb,name);
@@ -26,5 +26,4 @@ const showmovies = () => {
             });
 
 }
-showmovies()
-
+showmoviess()
