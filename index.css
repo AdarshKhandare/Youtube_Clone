@@ -20,30 +20,32 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background: #fff;
     display: flex;
     align-items: center;
     padding: 0 2.5vw;
+    margin-bottom: 80px;
 }
 
 .toggle-btn{
-    width: 20px;
-    height: 10px;
+    width: 30px;
+    height: 15px;
     position: relative;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .toggle-btn span{
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     top: 50%;
     transform: translateY(-50%);
-    background: #979797;
+    background: black;
 }
 
-.toggle-btn span:nth-child(1){
+ .toggle-btn span:nth-child(1){
     top: 0;
 }
 
@@ -51,22 +53,26 @@ body{
     top: 100%;
 }
 
-.logo{
+.fa-brands {
     height: 30px;
+    width: 50px;
+    color: red;
     margin: -10px 30px 0;
+    margin-bottom: 15px;
 }
 
 .search-box{
     position: relative;
-    max-width: 500px;
+    max-width: 600px;
     width: 50%;
-    height: 35px;
+    height: 40px;
     display: flex;
+    margin-left: 300px;
 }
 
 .search-bar{
     width: 85%;
-    height: 100%;
+    height: 90%;
     border: 2px solid #dbdbdb;
     padding: 0 20px;
     font-size: 16px;
@@ -82,15 +88,24 @@ body{
     border-left: none;
 }
 
+
 .search-btn img{
     height: 100%;
+}
+
+.iconnn{
+
+    width: 20px;
+    height: 30px;
+    margin-left:15px;
+    margin-top: 5px;
 }
 
 .user-options{
     height: 35px;
     display: flex;
-    margin-left: auto;
     align-items: center;
+    margin-left: 200px;
 }
 
 .user-options .icon{
@@ -101,17 +116,17 @@ body{
 
 .user-dp{
     cursor: pointer;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     overflow: hidden;
+    margin-top: 20px
 }
 
-.user-dp img{
+.logooo{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} 
 
 /* nav bar start here */
 
@@ -122,7 +137,7 @@ body{
     top: 60px;
     left: 0;
     min-width: 250px;
-    width: 250px;
+    width: 200px;
     height: calc(100vh - 60px);
     background: #fff;
     padding-right: 10px;
@@ -130,7 +145,7 @@ body{
 
 .links{
     display: block;
-    width: 100%;
+    width: 80%;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -199,17 +214,36 @@ body{
     background: #242424;
 }
 
+.filter-options:hover {
+
+    background: #242424;
+    color: #fff;
+}
+
 /* filter end here */
+
+/* banner start here */
+#banner{
+    margin-top: 130px;
+    width: 60%;
+    margin-left: 280px;
+    position:static;
+    margin-bottom:-100px
+}
+#banner img{
+    width: 135%;
+}
 
 
 #search_results {
 
+    position: static;
     width: calc(100% - 250px);
     margin-top: 120px;
     margin-left: 250px;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(4, 22%);
     gap: 40px;
     overflow-x: hidden;
 }
@@ -220,6 +254,7 @@ body{
     width: 100%;
     height: 150px;
     object-fit: cover;
+    border-radius: 5px;
 
     
 }

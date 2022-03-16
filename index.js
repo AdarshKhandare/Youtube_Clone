@@ -42,13 +42,16 @@ const bydefaultVideos = (data) =>{
 
             let titlee = document.createElement("h4");
             titlee.innerText = ele.snippet.title;
+
+            let channelTitle = document.createElement("p");
+            channelTitle.innerText = ele.snippet.channelTitle;
  
             let thumb = document.createElement("img");
             thumb.src = ele.snippet.thumbnails.high.url;
             thumb.setAttribute("id","thumb")
             
 
-            div.append(thumb,titlee);
+            div.append(thumb,titlee,channelTitle);
 
             document.querySelector("#search_results").append(div)
 
@@ -111,13 +114,16 @@ const appendVideo = (data) =>{
 
             let titlee = document.createElement("h4");
             titlee.innerText = ele.snippet.title;
+            
+            let channelTitle = document.createElement("p");
+            channelTitle.innerText = ele.snippet.channelTitle;
  
             let thumb = document.createElement("img");
             thumb.src = ele.snippet.thumbnails.high.url;
             thumb.setAttribute("id","thumb")
             
 
-            div.append(thumb,titlee);
+            div.append(thumb,titlee,channelTitle);
 
             document.querySelector("#search_results").append(div)
 

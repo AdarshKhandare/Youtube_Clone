@@ -14,12 +14,15 @@ const showmovies = () => {
             let name = document.createElement("h2");
             name.innerText = ele.snippet.title;
 
+            let channelTitle = document.createElement("p");
+            channelTitle.innerText = ele.snippet.channelTitle;
+
  
             let thumb = document.createElement("iframe");
             thumb.src = `https://www.youtube.com/embed/${ele.id}`;
             
 
-            div.append(thumb,name);
+            div.append(thumb,name,channelTitle);
 
             document.querySelector("#showMovie").append(div)
 
